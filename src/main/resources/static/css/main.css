@@ -1,0 +1,127 @@
+/* Existing styles with modifications */
+body {
+    padding-left: 1em;
+    font-family: 'Arial', sans-serif; /* Use Arial for a closer match to the image */
+    background-color: #f4f4f4; /* Set a light background color */
+    margin: 0; /* Remove default margin */
+}
+
+main {
+    padding: 1em;
+    background-color: white; /* Set a white background for the main content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to main content */
+    margin: 2em auto; /* Center the main content on the page */
+    max-width: 800px; /* Set a max width for the main content */
+}
+
+h1 {
+    color: #4caf50;
+    text-shadow: none; /* Remove text shadow for a cleaner look */
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+label {
+    color: #333; /* Darker color for better readability */
+    font-weight: normal; /* Normal font weight for labels */
+    margin-top: 0.5em; /* Add space on top of labels */
+}
+
+span.result {
+    color: #ff9800;
+    font-weight: bolder;
+    font-style: normal; /* Use normal style instead of oblique */
+}
+
+/* Additional modifications for alignment and spacing */
+div.choice-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between; /* Space out flex items */
+    padding: 0.5em;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0; /* Adjust spacing around table */
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+th, td {
+    padding: 0.5em 1em; /* Adjust padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Lighter border color for a subtler effect */
+}
+
+th {
+    background-color: #e8e8e8; /* Adjust header background color */
+    color: #333;
+    font-weight: bold; /* Make header font bold */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e8e8e8; /* Match hover color to header background */
+}
+
+/* Form styles */
+form {
+    /* ...existing styles... */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 20px; /* Spacing inside the form */
+    background-color: #fff; /* White background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Spacing inside the input fields */
+    margin-bottom: 15px; /* Space between the fields */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4caf50; /* Green border on focus */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6); /* Glowing effect on focus */
+}
+
+button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Spacing inside the button */
+    margin-top: 0; /* Adjust as needed */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    font-size: 1em; /* Adjust text size as needed */
+    cursor: pointer; /* Cursor effect on hover */
+    box-shadow: none; /* No shadow (or adjust as desired) */
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Adjust the following styles as needed to match the exact look */
+label {
+    display: block; /* Ensure the label is on a new line */
+    margin-bottom: 5px; /* Space between the label and the input field */
+    color: #333; /* Dark grey color for text */
+    font-size: 1em; /* Adjust the font size as needed */
+}
+
+/* Style for the readonly input to make it look disabled */
+input[readonly] {
+    background-color: #e9e9e9; /* Light grey background */
+    color: #777; /* Dark grey text */
+}

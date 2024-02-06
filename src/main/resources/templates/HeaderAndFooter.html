@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Quiz 1</title>
+</head>
+<body>
+<header th:fragment="header">
+    <h1>Quiz 1</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/newIndex}">Generate a New Table</a></li>
+        </ul>
+    </nav>
+    <p>"Generate a New Table" Generates a Number of Rows Randomly from 1 To 9</p>
+    <p>Each Row Will Have a Random Value Ranging From 1 to 9</p>
+</header>
+<main>
+    <!-- Main content specific to each page -->
+</main>
+<footer th:fragment="footer">
+    <p>Copyright © Munsif Siddiqui | 991680159</p>
+</footer>
+</body>
+</html>
