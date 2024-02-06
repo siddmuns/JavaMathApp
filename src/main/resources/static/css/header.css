@@ -24,7 +24,7 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333; /* Adjust the color to match the text color of your navigation links */
+    text-decoration: underline; /* Adds underline to the links */
+    color: pink; /* Sets the text color to pink */
     font-family: Arial, sans-serif;
 }

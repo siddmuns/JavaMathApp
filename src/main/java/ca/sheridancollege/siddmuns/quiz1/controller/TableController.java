@@ -49,8 +49,8 @@ public class TableController {
     @GetMapping("/newIndex")
     public ModelAndView newIndex() {
         log.trace("newIndex() is called");
-        Table newTable = new Table();
-        List<Integer> tableRows = newTable.getTable();
+        table.generateRandomValues();
+        List<Integer> tableRows = table.getTable();
         ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("tableRows", tableRows);
         return modelAndView;
